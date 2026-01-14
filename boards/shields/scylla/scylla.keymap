@@ -30,8 +30,8 @@
         layer_2 { // Function and Media Keys layer
             bindings = <
                 &kp CAPS      &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp F11
-                &kp C_NEXT    &kp C_PP   &kp C_VOL_DN   &kp C_VOL_UP   &kp PG_UP    &kp HOME   &none      &none      &kp PSCRN   &kp PAUS    &none  &kp F12
-                &kp C_PREV    &kp LEFT    &kp DOWN   &kp UP      &kp RIGHT   &kp DEL   &none       &kp RA(Q)  &kp RA(W)  &kp RA(E)  &kp LCTRL      &none
+                &kp C_PREV    &kp C_PP   &kp C_VOL_DN   &kp C_VOL_UP   &kp PG_UP    &kp HOME   &none      &none      &kp PSCRN   &kp PAUS    &none  &kp F12
+                &kp C_NEXT    &kp LEFT    &kp DOWN   &kp UP      &kp RIGHT   &kp DEL   &none       &kp RA(Q)  &kp RA(W)  &kp RA(E)  &kp LCTRL      &none
                 &kp F13     &kp F14    &kp F15    &kp F16    &kp PG_DN   &kp END   &none      &none     &kp INS    &kp SLCK   &none     &tog 1
                                 &kp LCTRL   &mo 2      &kp LSHFT   &kp RSHFT  &kp ESC    &kp RGUI 
                                             &kp LALT   &kp SPACE  &kp BSPC    &kp ENTER

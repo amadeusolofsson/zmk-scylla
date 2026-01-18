@@ -1,12 +1,12 @@
 include:
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: scylla_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n # Comment for using bluetooth and not the dongle.
     # snippet: studio-rpc-usb-uart # Uncomment to use.
     # cmake-args: -DCONFIG_ZMK_STUDIO=y # Zmk studio with bluetooth.
     artifact-name: left_firmware
         
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: scylla_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n # Comment for using bluetooth and not the dongle.
     artifact-name: right_firmware
@@ -17,7 +17,7 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: dongle_firmware
 
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: settings_reset
     artifact-name: keyboard_reset
 

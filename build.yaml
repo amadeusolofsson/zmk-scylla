@@ -11,7 +11,7 @@ include:
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n # Comment for using bluetooth and not the dongle.
     artifact-name: right_firmware
 
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: scylla_dongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
@@ -21,6 +21,6 @@ include:
     shield: settings_reset
     artifact-name: keyboard_reset
 
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: settings_reset
     artifact-name: dongle_reset

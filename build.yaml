@@ -11,16 +11,16 @@ include:
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: right_split_dongle_with_battery
 
-    # Left Split With Dongle Firmware (Pure Dongle, No Bluetooth Battery)
+   # Left Split With Dongle Firmware (Pure Dongle, No Bluetooth Battery)
   - board: nice_nano
     shield: scylla_left
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_BT=n
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_BT_MAX_CONN=1 -DCONFIG_BT_MAX_PAIRED=1
     artifact-name: left_split_dongle_only
 
     # Right Split With Dongle Firmware (Pure Dongle, No Bluetooth Battery)
   - board: nice_nano
     shield: scylla_right
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_BT=n
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_BT_MAX_CONN=1 -DCONFIG_BT_MAX_PAIRED=1
     artifact-name: right_split_dongle_only
 
     # Dongle Central Firmware 

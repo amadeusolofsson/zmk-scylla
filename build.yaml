@@ -23,19 +23,12 @@ include:
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_BT_MAX_CONN=1 -DCONFIG_BT_MAX_PAIRED=1
     artifact-name: right_split_dongle_only
 
-    # Dongle Central (No bluetooth device, No Battery)
-  - board: xiao_ble//zmk
-    shield: scylla_dongle
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_BT_MAX_CONN=2 -DCONFIG_BT_MAX_PAIRED=2 -DCONFIG_ZMK_STUDIO_TRANSPORT_BLE=n
-    artifact-name: dongle_central
-
-    # Dongle Central (Bluetooth shows up, Battery status of splits)
+    # Dongle Central Firmware 
   - board: xiao_ble//zmk
     shield: scylla_dongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: dongle_central_battery
+    artifact-name: dongle_central
 
     # Left Split With Bluetooth
   - board: nice_nano//zmk

@@ -1,15 +1,27 @@
 include:
-    # Left Split With Dongle Firmware
+    # Left Split With Dongle Firmware (With Bluetooth Battery Reporting)
   - board: nice_nano
     shield: scylla_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-    artifact-name: left_split_dongle
+    artifact-name: left_split_dongle_with_battery
 
-    # Right Split With Dongle Firmware
+    # Right Split With Dongle Firmware (With Bluetooth Battery Reporting)
   - board: nice_nano
     shield: scylla_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-    artifact-name: right_split_dongle
+    artifact-name: right_split_dongle_with_battery
+
+    # Left Split With Dongle Firmware (Pure Dongle, No Bluetooth Battery)
+  - board: nice_nano
+    shield: scylla_left
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_BT=n
+    artifact-name: left_split_dongle_only
+
+    # Right Split With Dongle Firmware (Pure Dongle, No Bluetooth Battery)
+  - board: nice_nano
+    shield: scylla_right
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_BT=n
+    artifact-name: right_split_dongle_only
 
     # Dongle Central Firmware 
   - board: xiao_ble

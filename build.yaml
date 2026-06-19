@@ -1,54 +1,54 @@
 include:
     # Left Split With Dongle Firmware (With Bluetooth Battery Reporting)
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: scylla_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: left_split_dongle_with_battery
 
     # Right Split With Dongle Firmware (With Bluetooth Battery Reporting)
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: scylla_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: right_split_dongle_with_battery
 
    # Left Split With Dongle Firmware (Pure Dongle, No Bluetooth Battery)
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: scylla_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_BT_MAX_CONN=1 -DCONFIG_BT_MAX_PAIRED=1
     artifact-name: left_split_dongle_only
 
     # Right Split With Dongle Firmware (Pure Dongle, No Bluetooth Battery)
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: scylla_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n -DCONFIG_BT_MAX_CONN=1 -DCONFIG_BT_MAX_PAIRED=1
     artifact-name: right_split_dongle_only
 
     # Dongle Central Firmware 
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: scylla_dongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: dongle_central
 
     # Left Split With Bluetooth
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: scylla_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT=y
     artifact-name: left_split_bluetooth
     
     # Right Split With Bluetooth
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: scylla_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y
     artifact-name: right_split_bluetooth
 
     # Reset both splits with this firmware before flashing.
-  - board: nice_nano
+  - board: nice_nano//zmk
     shield: settings_reset
     artifact-name: keyboard_reset
 
     # Reset the dongle with this firmware before flashing.
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: settings_reset
     artifact-name: dongle_reset
